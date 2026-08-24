@@ -255,6 +255,17 @@
   }
 
   /* ---------- servicios ---------- */
+  .demolition-visual{
+    min-height:380px;
+    background-image:
+      linear-gradient(rgba(255,255,255,.38), rgba(255,255,255,.38)),
+      url('assets/demolicion-urbana-armesto.webp');
+    background-size:cover;
+    background-position:center;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+
   .servicios{background:var(--bg);}
   .serv-grid{
     display:grid;
@@ -543,8 +554,8 @@
   @media (max-width: 640px){
     .nav-links-wrap{display:none;}
     .burger{display:block;}
+    .demolition-visual{min-height:240px; background-position:62% center;}
     .serv-grid, .proceso-list, .proy-grid, .foot-grid{grid-template-columns:1fr;}
     .hero-stats{grid-template-columns:1fr 1fr;}
     .cta-inner{flex-direction:column; align-items:flex-start;}
   }
-
