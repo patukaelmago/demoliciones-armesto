@@ -160,7 +160,7 @@
     color:var(--navy);
     margin-bottom:22px;
   }
-  .hero h1 .accent-word{color:var(--accent-dim);}
+  .hero h1 .accent-word{color:var(--accent);}
   .hero p.lead{
     font-size:17px;
     color:var(--steel);
