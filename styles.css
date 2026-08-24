@@ -372,7 +372,7 @@
     border:1px solid var(--line);
     display:flex; align-items:center; justify-content:center;
   }
-  .porque-photo svg{width:100%; height:100%;}
+  .porque-photo img{width:100%; height:100%; object-fit:cover; object-position:center;}
   .porque-photo .credit{
     position:absolute; bottom:0; left:0; right:0;
     font-family:var(--font-mono);
