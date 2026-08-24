@@ -26,16 +26,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#1C2430;
-    --navy:#21324A;
-    --steel:#5B6470;
-    --line:#DCDFD8;
-    --bg:#FFFFFF;
-    --bg-2:#F5F6F2;
-    --bg-3:#EDEFE9;
-    --accent:#E8590C;
-    --accent-dim:#C64C09;
-    --yellow:#F4C430;
+    --ink:#303335;
+    --navy:#4A4D4F;
+    --steel:#6A6D6F;
+    --line:#D8D2C8;
+    --bg:#F3EFE7;
+    --bg-2:#E8E3DA;
+    --bg-3:#DDD7CD;
+    --accent:#FF5A1F;
+    --accent-dim:#D94712;
+    --yellow:#F3EFE7;
     --font-display: 'Archivo', sans-serif;
     --font-body: 'IBM Plex Sans', sans-serif;
     --font-mono: 'IBM Plex Mono', monospace;
@@ -90,8 +90,8 @@
     display:flex; align-items:center; gap:12px;
   }
   .logo-box{
-    width:42px; height:42px;
-    border:2px solid var(--yellow);
+    width:54px; height:54px;
+    border:0;
     display:flex; align-items:center; justify-content:center;
     overflow:hidden;
     flex-shrink:0;
@@ -100,6 +100,7 @@
   .logo-box img{
     width:100%; height:100%; object-fit:cover;
   }
+  .logo-box svg{width:100%; height:100%; display:block;}
   .logo-text{
     font-family:var(--font-display);
     font-weight:800;
@@ -580,15 +581,11 @@
 <header>
   <div class="nav">
     <div class="logo-mark">
-      <div class="logo-box">
-        <svg viewBox="0 0 42 42" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
-          <rect width="42" height="42" fill="#FFFFFF"/>
-          <path d="M6 33 L15 12 L18 12 L18 33" stroke="#21324A" stroke-width="2" fill="none" stroke-linejoin="round"/>
-          <path d="M18 16 L34 9" stroke="#21324A" stroke-width="2" stroke-linecap="round"/>
-          <circle cx="34" cy="9" r="1.6" fill="#E8590C"/>
-          <line x1="34" y1="9" x2="30" y2="26" stroke="#E8590C" stroke-width="1.6"/>
-          <circle cx="30" cy="26" r="3" fill="#E8590C"/>
-          <line x1="4" y1="33" x2="26" y2="33" stroke="#21324A" stroke-width="2" stroke-linecap="round"/>
+      <div class="logo-box" aria-label="Logo Demoliciones Armesto">
+        <svg viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" role="img">
+          <rect width="108" height="108" fill="#4A4D4F"/>
+          <text x="52" y="69" text-anchor="middle" fill="#F3EFE7" font-family="Arial, sans-serif" font-size="51" font-weight="900" letter-spacing="-7">DA</text>
+          <path d="M31 79L59 41H68L45 79Z" fill="#FF5A1F"/>
         </svg>
       </div>
       <div class="logo-text">DEMOLICIONES<br>ARMESTO<span>Demolición industrial y controlada</span></div>
