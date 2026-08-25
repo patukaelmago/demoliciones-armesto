@@ -61,6 +61,7 @@
   }
   .logo-mark{
     display:flex; align-items:center; gap:12px;
+    text-decoration:none;
   }
   .logo-box{
     width:54px; height:54px;
