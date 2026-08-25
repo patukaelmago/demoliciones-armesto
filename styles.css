@@ -554,8 +554,30 @@
     .foot-grid{grid-template-columns:1fr 1fr;}
   }
   @media (max-width: 640px){
-    .nav-links-wrap{display:none;}
-    .burger{display:block;}
+    .nav{position:relative;}
+    .nav-links-wrap{
+      display:none;
+      position:absolute;
+      top:100%;
+      left:0;
+      right:0;
+      background:var(--navy);
+      border-top:1px solid rgba(255,255,255,.08);
+      border-bottom:1px solid rgba(255,255,255,.12);
+      padding:18px 28px 24px;
+      flex-direction:column;
+      align-items:stretch;
+      gap:18px;
+      box-shadow:0 14px 24px rgba(0,0,0,.2);
+    }
+    .nav-links-wrap.open{display:flex;}
+    .nav-links{flex-direction:column; align-items:stretch; gap:4px;}
+    .nav-links a{display:block; padding:12px 2px;}
+    .nav-divider{display:none;}
+    .nav-cta{text-align:center; padding:14px 18px;}
+    .burger{display:block; padding:8px; line-height:1;}
+    .burger[aria-expanded="true"]{color:var(--accent);}
+    body.menu-open{overflow:hidden;}
     .demolition-visual{min-height:240px; background-position:62% center;}
     .serv-grid, .proceso-list, .proy-grid, .foot-grid{grid-template-columns:1fr;}
     .hero-stats{grid-template-columns:1fr 1fr;}
